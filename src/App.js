@@ -13,6 +13,11 @@ function App() {
   let [sixth,f] = useState('컵누들');
   let [seventh,g] = useState('베트남 쌀국수');
 
+  let [하뚜] = useState(0);
+  function pHeart(){
+    console.log(1)
+  }
+
 
   return (
     <div className="App">
@@ -21,7 +26,7 @@ function App() {
       </div>
       <div><h4>{post}</h4></div>
       <div className="list">
-        <h4>1. {first}</h4>
+        <h4>1. {first}<span onClick={ pHeart }>❤️</span>{하뚜}</h4>
         <p>아마 옛날에 누군가한테 선물받아서 처음 먹게된 라면이다</p>
         <p>매콤한걸 좋아하는 편이 아니라그런지 정말 맛있게 먹었다.</p>
         <p>아마 해물을 싫어하는게 아니라면 누구든 맛있게 먹을거라 장담한다. 핵꿀맛</p>
